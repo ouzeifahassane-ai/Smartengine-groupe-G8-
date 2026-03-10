@@ -2,4 +2,4 @@ data/raw/
 *.ipynb
 docs/exploration-*/
 
-Data.raw/*.csv
+data/raw/*.csv
