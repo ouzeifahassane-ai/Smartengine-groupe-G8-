@@ -1,0 +1,36 @@
+--- Model Comparison Report ---\nRandom Forest (Tuned) AUC: 0.6428\nXGBoost AUC: 0.5921\nBest Model: RandomForest\n\n--- Best Model Performance (RandomForest) ---\nClassification Report:\n              precision    recall  f1-score   support
+
+           0       0.79      1.00      0.88        78
+           1       1.00      0.05      0.09        22
+
+    accuracy                           0.79       100
+   macro avg       0.89      0.52      0.48       100
+weighted avg       0.83      0.79      0.71       100
+\nConfusion Matrix:\n[[78  0]
+ [21  1]]\n\nFeature Importances:\nerror_rate                  0.161847
+tenure_days                 0.158514
+avg_resolution_time         0.144283
+seats                       0.123164
+satisfaction_score_moyen    0.075280
+industry_risk_score         0.066965
+nb_tickets_urgents          0.044283
+industry_DevTools           0.023383
+plan_tier_Pro               0.022841
+referral_source_event       0.022186
+country_US                  0.021974
+plan_tier_Enterprise        0.019091
+downgrade_flag              0.018955
+referral_source_organic     0.016168
+referral_source_other       0.012963
+is_trial                    0.011310
+industry_EdTech             0.010894
+referral_source_partner     0.009941
+industry_HealthTech         0.009704
+country_IN                  0.007370
+country_UK                  0.005546
+industry_FinTech            0.005413
+country_DE                  0.003662
+country_FR                  0.002593
+country_CA                  0.001670
+auto_renew_flag             0.000000
+usage_trend_30j             0.000000
