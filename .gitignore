@@ -1,3 +1,7 @@
-data/raw/
+﻿data/raw/
+data/raw/*.csv
 *.ipynb
-docs/exploration-*/
+docs/exploration-*
+git rm -r --cached data/raw
+git commit -m "suppression data/raw du repo"
+git push
