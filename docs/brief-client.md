@@ -1,7 +1,7 @@
 # Brief client — Projet smartEngine
 
 > Sprint 1 · MSc2 Manager Data Marketing · INSEEC Lyon  
-> Rédigé par : [Product Owner]  
+> Rédigé par : Etya'alé [Product Owner]  
 > Date : Mars 2026
 
 ---
