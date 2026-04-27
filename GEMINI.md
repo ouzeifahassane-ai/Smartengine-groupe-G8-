@@ -32,20 +32,21 @@ Concevoir un système complet de prédiction de churn : nettoyage des données, 
 - Scrum Master : Nejma
 - Product Owner : Emmanuel
 
-### Sprint 2 (30 mars 2026 - en cours)
+### Sprint 2 (30 mars 2026 - 26 avril 2026)
 - Scrum Master : Joël-Samuel (Etya'alé)
 - Product Owner : Ouzeifa
 
+### Sprint 3 (27 avril 2026 - en cours)
+- Scrum Master : Joël-Samuel
+- Product Owner : Ouzeifa
+- Model Trainer : Boulama (@model-trainer)
+
 ## Sprint en cours
-Sprint 2 - Nettoyage et construction de la table analytique
+Sprint 3 - Modélisation et scoring
 
-## Bilan Sprint 1
-- Dépôt GitHub initialisé, GEMINI.md créé
-- Exploration du dataset réalisée (5 CSV analysés)
-- Veille outils complétée
-- Brief client rédigé
-- Dossier de conception section 1 produit
-- Agent data-explorer.md créé dans .gemini/agents/
+## Bilan Sprints Précédents
+- Sprint 1 : Initialisation, exploration du dataset, veille outils, brief client.
+- Sprint 2 : Nettoyage des données et construction de la table analytique (analytics.csv).
 
-## Table analytique à produire
+## Table analytique produite
 data/processed/analytics.csv (une ligne par account_id)
