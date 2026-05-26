@@ -1,4 +1,4 @@
-# Projet smartEngine — Groupe G8
+﻿# Projet smartEngine — Groupe G8
 
 ## Contexte métier
 
@@ -43,13 +43,16 @@ smartengine-groupe-G8/
 ├── README.md
 ├── .gemini/
 │   └── agents/
-│       └── data-explorer.md        # agent enrichi Sprint 2
+│       ├── data-explorer.md        # agent enrichi Sprint 2
+│       └── model-trainer.md        # agent initialisé Sprint 3
 ├── data/
 │   ├── raw/                         # les 5 CSV (jamais modifiés)
 │   └── processed/
 │       └── analytics.csv            # table analytique finale
 ├── outputs/
-│   └── rapport-nettoyage.md
+│   ├── rapport-nettoyage.md
+│   ├── rapport-modele.md
+│   └── models/
 ├── src/
 │   ├── clean_data.py
 │   ├── build_features.py
@@ -65,37 +68,25 @@ smartengine-groupe-G8/
 - Transparence algorithmique obligatoire
 - Documenter toutes les décisions de traitement (rapport de nettoyage)
 
-## Équipe — Sprint 2
+## Équipe — Sprint 3 (En cours)
 
-- Product Owner : emmanuel
-- Scrum Master : etya-ale
+- Product Owner : Ouzeifa
+- Scrum Master : Joël-Samuel
+- Model Trainer : Boulama (@model-trainer)
 - Développeurs IA : autres membres du groupe
 
-## Bilan Sprint 1 (terminé)
+## Bilan des Sprints
 
-- Dépôt GitHub créé et structuré
-- Les 5 CSV explorés et documentés dans data/raw/
-- Veille outils réalisée
-- Brief client rédigé
-- Agent d'exploration data-explorer.md créé dans .gemini/agents/
-- Backlog initialisé
-- Section 1 du dossier de conception rédigée
-- Compte-rendu sprint review déposé dans docs/standups/
+### Sprint 1 (Terminé)
+- Dépôt GitHub créé et structuré.
+- Exploration du dataset réalisée.
+- Veille outils et brief client rédigés.
 
-## Sprint en cours — Sprint 2 (30 mars 2026)
+### Sprint 2 (Terminé)
+- Nettoyage des 5 CSV et construction de la table analytique (data/processed/analytics.csv).
+- Feature engineering initial réalisé.
+- Rapport de nettoyage produit.
 
-Objectif : transformer les données brutes en table analytique prête pour la modélisation.
-
-Étapes :
-1. Nettoyage des 5 CSV (valeurs manquantes, types, doublons, outliers, cohérences)
-2. Construction de la table analytique data/processed/analytics.csv (1 ligne par account_id)
-3. Feature engineering : variables dérivées capturant les signaux de churn
-4. Enrichissement de l'agent data-explorer.md avec les instructions de traitement
-5. Rapport de nettoyage dans outputs/rapport-nettoyage.md
-6. Section 2 du dossier de conception
-
-## Agent IA — data-explorer.md (enrichi Sprint 2)
-
-L'agent data-explorer.md a été enrichi pour couvrir le nettoyage et la transformation.
-Choix justifié dans le dossier de conception : un seul agent couvre tout le périmètre données
-pour éviter la duplication de contexte entre exploration et traitement.
+## Sprint en cours — Sprint 3 (27 avril 2026)
+**Objectif** : Modélisation et scoring prédictif.
+**Statut** : En cours. Baseline Random Forest établie (AUC-ROC: 0.64 après tuning).
