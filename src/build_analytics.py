@@ -45,8 +45,9 @@ def build_analytics():
     # ── Enrichissement depuis subscriptions ───────────────────────────────
     print("Agrégation subscriptions...")
 
-    # Abonnement actif par compte (is_active = True)
-    subs_active = subs[subs["is_active"] == True].sort_values("start_date")
+    # Abonnement actif par compte : end_date NULL signifie actif (convention métier)
+    subs["is_active"] = subs["end_date"].isnull()
+    subs_active = subs[subs["is_active"]].sort_values("start_date")
     subs_active_agg = subs_active.groupby("account_id").agg(
         mrr_current       = ("mrr_amount",      "last"),
         current_plan_tier = ("plan_tier",        "last"),

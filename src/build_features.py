@@ -7,24 +7,21 @@ def build_features():
     Script de feature engineering pour la prédiction de churn.
     Agrège les données brutes par account_id pour créer une table analytique.
     """
-    # Configuration des chemins
-    raw_dir = os.path.join('data', 'raw')
+    # Configuration des chemins — données nettoyées par clean_data.py
     processed_dir = os.path.join('data', 'processed')
-    
-    # Créer le dossier de destination si besoin
-    if not os.path.exists(processed_dir):
-        os.makedirs(processed_dir)
 
-    print("Chargement des données brutes...")
-    
+    os.makedirs(processed_dir, exist_ok=True)
+
+    print("Chargement des données nettoyées...")
+
     try:
-        df_accounts = pd.read_csv(os.path.join(raw_dir, 'ravenstack_accounts.csv'))
-        df_subs = pd.read_csv(os.path.join(raw_dir, 'ravenstack_subscriptions.csv'))
-        df_usage = pd.read_csv(os.path.join(raw_dir, 'ravenstack_feature_usage.csv'))
-        df_tickets = pd.read_csv(os.path.join(raw_dir, 'ravenstack_support_tickets.csv'))
-        # df_churn = pd.read_csv(os.path.join(raw_dir, 'ravenstack_churn_events.csv')) # Optionnel si churn_flag est dans accounts
+        df_accounts = pd.read_csv(os.path.join(processed_dir, 'accounts.csv'))
+        df_subs = pd.read_csv(os.path.join(processed_dir, 'subscriptions.csv'))
+        df_usage = pd.read_csv(os.path.join(processed_dir, 'feature_usage.csv'))
+        df_tickets = pd.read_csv(os.path.join(processed_dir, 'support_tickets.csv'))
+        df_churn = pd.read_csv(os.path.join(processed_dir, 'churn_events.csv'))
     except FileNotFoundError as e:
-        print(f"Erreur : Un ou plusieurs fichiers sont introuvables. {e}")
+        print(f"Erreur : Un ou plusieurs fichiers introuvables. Exécutez d'abord clean_data.py. {e}")
         return
 
     # --- 1. PRÉPARATION DES DONNÉES ---
@@ -77,8 +74,8 @@ def build_features():
     print("Fusion des features dans la table analytique...")
     
     # On part de la table accounts comme base
-    master_df = df_accounts[['account_id', 'industry', 'plan_tier', 'seats', 'churn_flag']].copy()
-    
+    master_df = df_accounts[['account_id', 'industry', 'plan_tier', 'seats']].copy()
+
     # Fusion successive
     master_df = master_df.merge(subs_agg, on='account_id', how='left')
     master_df = master_df.merge(usage_agg, on='account_id', how='left')
@@ -96,8 +93,9 @@ def build_features():
     # Pour les moyennes (satisfaction, mrr), on peut laisser NaN ou imputer par la médiane
     # Ici, on laisse tel quel pour permettre une analyse de la corrélation
     
-    # Conversion de la cible en binaire si besoin
-    master_df['churn_flag'] = master_df['churn_flag'].map({True: 1, False: 0}).fillna(0).astype(int)
+    # Variable cible : churn_flag dérivée de churn_events (1 = churné, 0 = fidèle)
+    churned_ids = set(df_churn['account_id'])
+    master_df['churn_flag'] = master_df['account_id'].apply(lambda x: 1 if x in churned_ids else 0)
 
     # --- 5. SAUVEGARDE ---
 
