@@ -1,0 +1,501 @@
+account_id,churn_score,risk_level,mrr,quadrant,action_recommandee
+A-2e4581,0.73,high,1260.3,Action automatisée,Email automatisé
+A-43a9e3,0.73,high,1250.5,Action automatisée,Email automatisé
+A-0a282f,0.88,high,1219.0666666666666,Action automatisée,Email automatisé
+A-1f0ac7,0.54,medium,1325.0,Aucune action,Monitoring passif
+A-ce550d,0.47,medium,5417.888888888889,Fidéliser,Programme fidélité
+A-1b9609,0.61,medium,1528.1818181818182,Aucune action,Monitoring passif
+A-a0ca4e,0.49,medium,1848.111111111111,Aucune action,Monitoring passif
+A-e5d6ab,0.89,high,1304.8,Action automatisée,Email automatisé
+A-7dacce,0.74,high,2305.7,Priorité maximale,Appel CSM immédiat
+A-10b8da,0.64,medium,1464.5,Aucune action,Monitoring passif
+A-592832,0.38,medium,1714.2631578947369,Aucune action,Monitoring passif
+A-d40bf7,0.25,low,4324.7,Fidéliser,Programme fidélité
+A-6c093d,0.71,high,1353.5,Action automatisée,Email automatisé
+A-462d45,0.58,medium,1952.6666666666667,Fidéliser,Programme fidélité
+A-956988,0.67,medium,2262.076923076923,Fidéliser,Programme fidélité
+A-ac14bb,0.83,high,3468.25,Priorité maximale,Appel CSM immédiat
+A-463db0,0.51,medium,1895.142857142857,Aucune action,Monitoring passif
+A-ce66f8,0.34,medium,1976.3333333333333,Fidéliser,Programme fidélité
+A-c4ea60,0.82,high,1627.3333333333333,Action automatisée,Email automatisé
+A-832ec2,0.49,medium,1162.375,Aucune action,Monitoring passif
+A-684255,0.75,high,846.0,Action automatisée,Email automatisé
+A-c42f1f,0.56,medium,646.875,Aucune action,Monitoring passif
+A-4e44e8,0.82,high,2603.214285714286,Priorité maximale,Appel CSM immédiat
+A-30b4ca,0.5,medium,9492.25,Fidéliser,Programme fidélité
+A-9f2731,0.91,high,516.1428571428571,Action automatisée,Email automatisé
+A-32fb14,0.7,medium,1129.111111111111,Aucune action,Monitoring passif
+A-00cac8,0.67,medium,1569.0,Aucune action,Monitoring passif
+A-35083d,0.36,medium,2027.0625,Fidéliser,Programme fidélité
+A-eb7fac,0.74,high,4209.6,Priorité maximale,Appel CSM immédiat
+A-b20d99,0.44,medium,1581.2857142857142,Aucune action,Monitoring passif
+A-396e5f,0.53,medium,1023.6,Aucune action,Monitoring passif
+A-45ce7a,0.83,high,1173.7142857142858,Action automatisée,Email automatisé
+A-08e34e,0.82,high,1983.7272727272727,Priorité maximale,Appel CSM immédiat
+A-8145a0,0.6,medium,1438.3333333333333,Aucune action,Monitoring passif
+A-bad8c1,0.83,high,1113.857142857143,Action automatisée,Email automatisé
+A-44dc83,0.29,low,114.0,Aucune action,Monitoring passif
+A-f446b6,0.65,medium,1265.7777777777778,Aucune action,Monitoring passif
+A-a45270,0.69,medium,1677.5833333333333,Aucune action,Monitoring passif
+A-854864,0.76,high,2459.833333333333,Priorité maximale,Appel CSM immédiat
+A-1b7577,0.7,medium,797.3636363636364,Aucune action,Monitoring passif
+A-05f0e5,0.81,high,4259.083333333333,Priorité maximale,Appel CSM immédiat
+A-9077b0,0.71,high,509.2857142857143,Action automatisée,Email automatisé
+A-7f8241,0.46,medium,2634.4,Fidéliser,Programme fidélité
+A-2bc93d,0.48,medium,2491.846153846154,Fidéliser,Programme fidélité
+A-f3ff05,0.76,high,1497.3076923076924,Action automatisée,Email automatisé
+A-2d4502,0.68,medium,2907.1,Fidéliser,Programme fidélité
+A-6a4e2d,0.28375,low,944.9090909090908,Aucune action,Monitoring passif
+A-eb7c38,0.88,high,2547.333333333333,Priorité maximale,Appel CSM immédiat
+A-c37601,0.74,high,1706.25,Action automatisée,Email automatisé
+A-3b5cd1,0.86,high,1821.2307692307693,Action automatisée,Email automatisé
+A-b2225d,0.54,medium,1590.6666666666667,Aucune action,Monitoring passif
+A-94f8c9,0.51,medium,1999.3125,Fidéliser,Programme fidélité
+A-02fac6,0.83,high,2400.909090909091,Priorité maximale,Appel CSM immédiat
+A-c1dfe1,0.63,medium,3223.75,Fidéliser,Programme fidélité
+A-32728c,0.83375,high,562.25,Action automatisée,Email automatisé
+A-4c38bc,0.49,medium,3003.75,Fidéliser,Programme fidélité
+A-1b707d,0.54,medium,1166.5,Aucune action,Monitoring passif
+A-6f8ad2,0.86,high,1525.1764705882354,Action automatisée,Email automatisé
+A-4d1e75,0.69,medium,2414.6153846153848,Fidéliser,Programme fidélité
+A-9ee962,0.34,medium,1046.6666666666667,Aucune action,Monitoring passif
+A-378b99,0.72,high,1009.6666666666666,Action automatisée,Email automatisé
+A-94d3da,0.57,medium,1889.4166666666667,Aucune action,Monitoring passif
+A-e351e1,0.76,high,699.6,Action automatisée,Email automatisé
+A-9badbd,0.51,medium,2498.230769230769,Fidéliser,Programme fidélité
+A-7e0a10,0.74,high,4111.6,Priorité maximale,Appel CSM immédiat
+A-118d55,0.24,low,1993.25,Fidéliser,Programme fidélité
+A-526d93,0.58,medium,4355.666666666667,Fidéliser,Programme fidélité
+A-f92792,0.87,high,1343.357142857143,Action automatisée,Email automatisé
+A-84ebe4,0.89,high,2544.909090909091,Priorité maximale,Appel CSM immédiat
+A-5b4ebb,0.61,medium,2138.692307692308,Fidéliser,Programme fidélité
+A-2922b6,0.34,medium,1778.1666666666667,Aucune action,Monitoring passif
+A-9b9fe9,0.34,medium,1643.75,Aucune action,Monitoring passif
+A-a8b49c,0.38,medium,963.9166666666666,Aucune action,Monitoring passif
+A-9174e0,0.66,medium,3598.4,Fidéliser,Programme fidélité
+A-a1bbb6,0.73,high,1800.25,Action automatisée,Email automatisé
+A-c45b23,0.5,medium,708.6666666666666,Aucune action,Monitoring passif
+A-02cd81,0.55,medium,2354.0,Fidéliser,Programme fidélité
+A-ee42db,0.68,medium,963.9166666666666,Aucune action,Monitoring passif
+A-432483,0.58,medium,2868.1111111111118,Fidéliser,Programme fidélité
+A-9208f0,0.75,high,438.875,Action automatisée,Email automatisé
+A-98a59a,0.7,medium,3645.6,Fidéliser,Programme fidélité
+A-fe79a5,0.66,medium,1353.2,Aucune action,Monitoring passif
+A-726cfa,0.61125,medium,1830.6315789473683,Aucune action,Monitoring passif
+A-c43359,0.71,high,1539.0,Action automatisée,Email automatisé
+A-271f46,0.56,medium,2450.5,Fidéliser,Programme fidélité
+A-157070,0.82,high,1719.125,Action automatisée,Email automatisé
+A-40a557,0.71,high,2591.555555555556,Priorité maximale,Appel CSM immédiat
+A-66224b,0.39,medium,5765.333333333333,Fidéliser,Programme fidélité
+A-91e948,0.88,high,3127.714285714286,Priorité maximale,Appel CSM immédiat
+A-104f1a,0.55,medium,1577.125,Aucune action,Monitoring passif
+A-7988d1,0.57,medium,1188.0,Aucune action,Monitoring passif
+A-faa28c,0.48,medium,4171.714285714285,Fidéliser,Programme fidélité
+A-f25509,0.76,high,3224.4,Priorité maximale,Appel CSM immédiat
+A-3a7284,0.9,high,2959.9166666666665,Priorité maximale,Appel CSM immédiat
+A-3a5ad8,0.4,medium,2207.769230769231,Fidéliser,Programme fidélité
+A-65a46c,0.66,medium,2834.375,Fidéliser,Programme fidélité
+A-8b25f2,0.56,medium,1080.6153846153843,Aucune action,Monitoring passif
+A-fabe19,0.84,high,2928.1428571428573,Priorité maximale,Appel CSM immédiat
+A-adc1f3,0.61,medium,2956.4444444444443,Fidéliser,Programme fidélité
+A-503d5a,0.84,high,1490.3333333333333,Action automatisée,Email automatisé
+A-fd7ad3,0.67,medium,383.1,Aucune action,Monitoring passif
+A-186a44,0.59,medium,1499.2142857142858,Aucune action,Monitoring passif
+A-e888d1,0.66,medium,1240.5454545454545,Aucune action,Monitoring passif
+A-69fad4,0.58,medium,1245.857142857143,Aucune action,Monitoring passif
+A-9289f6,0.86,high,1091.3333333333333,Action automatisée,Email automatisé
+A-f19409,0.69,medium,2844.6666666666665,Fidéliser,Programme fidélité
+A-22f2df,0.74,high,827.8888888888889,Action automatisée,Email automatisé
+A-039727,0.55,medium,2428.0,Fidéliser,Programme fidélité
+A-2e3bad,0.73,high,4587.2,Priorité maximale,Appel CSM immédiat
+A-484819,0.42,medium,2575.5,Fidéliser,Programme fidélité
+A-425e76,0.58,medium,1555.5454545454545,Aucune action,Monitoring passif
+A-e83938,0.77,high,937.875,Action automatisée,Email automatisé
+A-ad296b,0.2,low,3071.6666666666665,Fidéliser,Programme fidélité
+A-e51ec7,0.81,high,3009.5,Priorité maximale,Appel CSM immédiat
+A-0aaf6e,0.85,high,2676.0,Priorité maximale,Appel CSM immédiat
+A-e61e98,0.81,high,1498.2222222222222,Action automatisée,Email automatisé
+A-92a333,0.74,high,1776.5,Action automatisée,Email automatisé
+A-95b24a,0.59,medium,2275.818181818182,Fidéliser,Programme fidélité
+A-42e5e1,0.84,high,1273.7142857142858,Action automatisée,Email automatisé
+A-7d514c,0.61,medium,2697.1111111111118,Fidéliser,Programme fidélité
+A-65aeb5,0.6375,medium,2866.0,Fidéliser,Programme fidélité
+A-e2cd1b,0.7,medium,1394.2222222222222,Aucune action,Monitoring passif
+A-180abf,0.68,medium,4145.777777777777,Fidéliser,Programme fidélité
+A-f17767,0.73,high,1152.7857142857142,Action automatisée,Email automatisé
+A-5a184f,0.74,high,2068.3,Priorité maximale,Appel CSM immédiat
+A-7df7a7,0.59,medium,1943.6666666666667,Fidéliser,Programme fidélité
+A-1ac5e0,0.56,medium,1824.9,Aucune action,Monitoring passif
+A-52dd88,0.7,medium,1508.3636363636365,Aucune action,Monitoring passif
+A-bece89,0.72,high,3208.333333333333,Priorité maximale,Appel CSM immédiat
+A-029f69,0.46,medium,914.875,Aucune action,Monitoring passif
+A-5c046d,0.46,medium,10485.75,Fidéliser,Programme fidélité
+A-fb186e,0.55,medium,1923.6666666666667,Fidéliser,Programme fidélité
+A-ae052e,0.47,medium,1282.1666666666667,Aucune action,Monitoring passif
+A-9f9299,0.84,high,2826.866666666667,Priorité maximale,Appel CSM immédiat
+A-96e141,0.36,medium,2209.714285714286,Fidéliser,Programme fidélité
+A-117171,0.47,medium,2403.0,Fidéliser,Programme fidélité
+A-313be3,0.76,high,1727.8181818181818,Action automatisée,Email automatisé
+A-671f31,0.3,medium,5064.166666666667,Fidéliser,Programme fidélité
+A-bbc346,0.81,high,2547.846153846154,Priorité maximale,Appel CSM immédiat
+A-c16101,0.53,medium,1242.2,Aucune action,Monitoring passif
+A-50f3f7,0.52,medium,2938.4666666666667,Fidéliser,Programme fidélité
+A-7da956,0.68,medium,913.5833333333334,Aucune action,Monitoring passif
+A-019782,0.34,medium,928.1111111111112,Aucune action,Monitoring passif
+A-df10db,0.71,high,1066.3636363636365,Action automatisée,Email automatisé
+A-3932db,0.78,high,1565.2222222222222,Action automatisée,Email automatisé
+A-4f18f0,0.6475,medium,2522.0,Fidéliser,Programme fidélité
+A-4c6f11,0.81,high,1517.2,Action automatisée,Email automatisé
+A-8ae05d,0.68,medium,3747.142857142857,Fidéliser,Programme fidélité
+A-b78bf8,0.62,medium,2802.875,Fidéliser,Programme fidélité
+A-eafc6e,0.62,medium,2318.428571428572,Fidéliser,Programme fidélité
+A-37f969,0.4,medium,2869.875,Fidéliser,Programme fidélité
+A-10b8f2,0.46,medium,2559.9166666666665,Fidéliser,Programme fidélité
+A-439b2f,0.87,high,299.3333333333333,Action automatisée,Email automatisé
+A-544d0a,0.77,high,1849.2,Action automatisée,Email automatisé
+A-ba6516,0.73,high,2183.0,Priorité maximale,Appel CSM immédiat
+A-712426,0.56,medium,746.4666666666667,Aucune action,Monitoring passif
+A-038089,0.9164285714285714,high,701.3333333333334,Action automatisée,Email automatisé
+A-afa505,0.48,medium,7334.444444444444,Fidéliser,Programme fidélité
+A-d5a319,0.81,high,3153.9166666666665,Priorité maximale,Appel CSM immédiat
+A-f97b9a,0.9,high,2166.6363636363635,Priorité maximale,Appel CSM immédiat
+A-2f6a32,0.35,medium,683.0,Aucune action,Monitoring passif
+A-856b1e,0.86,high,1053.5,Action automatisée,Email automatisé
+A-17939a,0.68,medium,879.0,Aucune action,Monitoring passif
+A-d27f50,0.54,medium,3734.5833333333335,Fidéliser,Programme fidélité
+A-e36807,0.8,high,1256.9,Action automatisée,Email automatisé
+A-ff79f2,0.61,medium,3097.0,Fidéliser,Programme fidélité
+A-5b1bcd,0.53,medium,8886.533333333333,Fidéliser,Programme fidélité
+A-71615e,0.8,high,3131.769230769231,Priorité maximale,Appel CSM immédiat
+A-794a0b,0.32,medium,1510.7142857142858,Aucune action,Monitoring passif
+A-86902e,0.59,medium,3604.1,Fidéliser,Programme fidélité
+A-0532a9,0.8,high,1516.1,Action automatisée,Email automatisé
+A-9779ad,0.54,medium,5168.0,Fidéliser,Programme fidélité
+A-f45426,0.29,low,1571.7272727272727,Aucune action,Monitoring passif
+A-c1e51e,0.91,high,2390.5,Priorité maximale,Appel CSM immédiat
+A-fa3095,0.53,medium,5769.166666666667,Fidéliser,Programme fidélité
+A-ad64c6,0.69,medium,2451.333333333333,Fidéliser,Programme fidélité
+A-39b19f,0.93,high,1930.636363636364,Priorité maximale,Appel CSM immédiat
+A-56962b,0.59,medium,7800.714285714285,Fidéliser,Programme fidélité
+A-e60f9d,0.79,high,3387.8,Priorité maximale,Appel CSM immédiat
+A-88c6ca,0.64,medium,921.2857142857144,Aucune action,Monitoring passif
+A-158f4e,0.76,high,3654.9166666666665,Priorité maximale,Appel CSM immédiat
+A-5b051a,0.63,medium,583.0,Aucune action,Monitoring passif
+A-296d7c,0.78,high,284.1428571428572,Action automatisée,Email automatisé
+A-1619f8,0.63,medium,2827.1428571428573,Fidéliser,Programme fidélité
+A-a1b80b,0.38,medium,2161.8125,Fidéliser,Programme fidélité
+A-139c3b,0.45,medium,1128.375,Aucune action,Monitoring passif
+A-702032,0.51,medium,1423.3333333333333,Aucune action,Monitoring passif
+A-7a0d69,0.63,medium,942.0,Aucune action,Monitoring passif
+A-22d9d2,0.93,high,1339.0,Action automatisée,Email automatisé
+A-b9eed8,0.33,medium,1507.0,Aucune action,Monitoring passif
+A-dfbd31,0.36,medium,1791.357142857143,Aucune action,Monitoring passif
+A-8e47ca,0.45,medium,3124.4444444444443,Fidéliser,Programme fidélité
+A-4437e4,0.58,medium,1114.4375,Aucune action,Monitoring passif
+A-779e4e,0.45,medium,2808.1,Fidéliser,Programme fidélité
+A-53f4e3,0.9,high,1507.2,Action automatisée,Email automatisé
+A-692f18,0.83,high,1797.0588235294117,Action automatisée,Email automatisé
+A-13466a,0.74,high,2223.833333333333,Priorité maximale,Appel CSM immédiat
+A-1986ca,0.56,medium,3951.571428571429,Fidéliser,Programme fidélité
+A-0cc442,0.66,medium,4764.2307692307695,Fidéliser,Programme fidélité
+A-c608c8,0.91,high,1189.25,Action automatisée,Email automatisé
+A-3be56b,0.68,medium,1420.0,Aucune action,Monitoring passif
+A-354f12,0.83,high,2222.25,Priorité maximale,Appel CSM immédiat
+A-68f37c,0.45,medium,2689.1666666666665,Fidéliser,Programme fidélité
+A-aa9511,0.61375,medium,4064.6666666666665,Fidéliser,Programme fidélité
+A-af0cd2,0.65,medium,587.2727272727273,Aucune action,Monitoring passif
+A-bd4513,0.34,medium,4350.333333333333,Fidéliser,Programme fidélité
+A-c222ab,0.57,medium,2665.1428571428573,Fidéliser,Programme fidélité
+A-34d880,0.5,medium,2329.333333333333,Fidéliser,Programme fidélité
+A-508199,0.74,high,1687.2,Action automatisée,Email automatisé
+A-f03140,0.66,medium,2107.5,Fidéliser,Programme fidélité
+A-410e86,0.79,high,2280.0,Priorité maximale,Appel CSM immédiat
+A-fa2041,0.4,medium,1742.9166666666667,Aucune action,Monitoring passif
+A-de58ca,0.59,medium,2173.181818181818,Fidéliser,Programme fidélité
+A-05d3b3,0.72,high,970.0,Action automatisée,Email automatisé
+A-249769,0.53,medium,1209.0,Aucune action,Monitoring passif
+A-e43bf7,0.61,medium,6666.571428571428,Fidéliser,Programme fidélité
+A-eb2fdc,0.54,medium,2664.0,Fidéliser,Programme fidélité
+A-e1462e,0.61,medium,1718.571428571429,Aucune action,Monitoring passif
+A-cab532,0.6212225274725275,medium,1339.2,Aucune action,Monitoring passif
+A-9123ac,0.72,high,2107.285714285714,Priorité maximale,Appel CSM immédiat
+A-6e08f3,0.41,medium,1819.0,Aucune action,Monitoring passif
+A-d922bf,0.52,medium,2444.8571428571427,Fidéliser,Programme fidélité
+A-8ed5dd,0.37,medium,996.3333333333334,Aucune action,Monitoring passif
+A-7c6b6b,0.87,high,688.2857142857143,Action automatisée,Email automatisé
+A-3c1a3f,0.85,high,1242.4166666666667,Action automatisée,Email automatisé
+A-b48f73,0.51,medium,4045.714285714286,Fidéliser,Programme fidélité
+A-76fa4d,0.63,medium,8812.285714285714,Fidéliser,Programme fidélité
+A-b2af2e,0.53,medium,778.0,Aucune action,Monitoring passif
+A-9bfc9f,0.53,medium,1704.6666666666667,Aucune action,Monitoring passif
+A-4ae22a,0.77,high,1347.428571428571,Action automatisée,Email automatisé
+A-fda07f,0.92,high,2368.1666666666665,Priorité maximale,Appel CSM immédiat
+A-de24d5,0.66,medium,1640.5384615384614,Aucune action,Monitoring passif
+A-977ca0,0.48,medium,1878.4375,Aucune action,Monitoring passif
+A-ab438f,0.65,medium,2044.75,Fidéliser,Programme fidélité
+A-e89151,0.73,high,2414.8888888888887,Priorité maximale,Appel CSM immédiat
+A-40906c,0.63,medium,5366.666666666667,Fidéliser,Programme fidélité
+A-81edc3,0.46,medium,1460.3333333333333,Aucune action,Monitoring passif
+A-328bd0,0.69,medium,1229.1538461538462,Aucune action,Monitoring passif
+A-b3fe05,0.68,medium,2721.555555555556,Fidéliser,Programme fidélité
+A-09540c,0.68,medium,3953.0,Fidéliser,Programme fidélité
+A-e693b6,0.54,medium,2846.25,Fidéliser,Programme fidélité
+A-2446e3,0.36,medium,3448.285714285714,Fidéliser,Programme fidélité
+A-241e75,0.94,high,718.8,Action automatisée,Email automatisé
+A-922109,0.61,medium,1086.0,Aucune action,Monitoring passif
+A-ff3c73,0.39,medium,481.6666666666667,Aucune action,Monitoring passif
+A-8b0451,0.62,medium,3170.9,Fidéliser,Programme fidélité
+A-331424,0.61,medium,1129.3333333333333,Aucune action,Monitoring passif
+A-51ec1b,0.78,high,1847.8333333333333,Action automatisée,Email automatisé
+A-bcf664,0.89,high,1056.0,Action automatisée,Email automatisé
+A-90a8c8,0.8564285714285714,high,3787.714285714286,Priorité maximale,Appel CSM immédiat
+A-86cdb4,0.75,high,394.55555555555554,Action automatisée,Email automatisé
+A-4bfa33,0.54,medium,800.8571428571429,Aucune action,Monitoring passif
+A-dbc825,0.88,high,2650.25,Priorité maximale,Appel CSM immédiat
+A-c70870,0.51,medium,5659.142857142857,Fidéliser,Programme fidélité
+A-7c4956,0.83,high,426.125,Action automatisée,Email automatisé
+A-0651a4,0.55,medium,2970.9333333333334,Fidéliser,Programme fidélité
+A-3ce5b8,0.75,high,1850.0,Action automatisée,Email automatisé
+A-bd4708,0.6,medium,2998.076923076923,Fidéliser,Programme fidélité
+A-993085,0.53,medium,3230.4,Fidéliser,Programme fidélité
+A-92a3af,0.5,medium,3139.818181818182,Fidéliser,Programme fidélité
+A-151c9a,0.84,high,2850.0,Priorité maximale,Appel CSM immédiat
+A-474ad4,0.71,high,808.3333333333334,Action automatisée,Email automatisé
+A-4ef964,0.39,medium,1586.5555555555557,Aucune action,Monitoring passif
+A-fd9422,0.66,medium,3125.555555555556,Fidéliser,Programme fidélité
+A-0baac2,0.74,high,3083.333333333333,Priorité maximale,Appel CSM immédiat
+A-bb1486,0.43,medium,2038.375,Fidéliser,Programme fidélité
+A-560d27,0.82375,high,3470.083333333333,Priorité maximale,Appel CSM immédiat
+A-0b0d6d,0.8,high,2576.230769230769,Priorité maximale,Appel CSM immédiat
+A-2789e3,0.78,high,2040.75,Priorité maximale,Appel CSM immédiat
+A-b07346,0.6,medium,6283.2,Fidéliser,Programme fidélité
+A-902ef7,0.51,medium,5540.25,Fidéliser,Programme fidélité
+A-20736a,0.59,medium,5789.285714285715,Fidéliser,Programme fidélité
+A-e4bf56,0.49,medium,2703.714285714286,Fidéliser,Programme fidélité
+A-cea1f0,0.85,high,1224.4,Action automatisée,Email automatisé
+A-ef84cf,0.78,high,1501.4,Action automatisée,Email automatisé
+A-d49cc5,0.64,medium,1665.625,Aucune action,Monitoring passif
+A-67be94,0.72,high,3132.8571428571427,Priorité maximale,Appel CSM immédiat
+A-4e960a,0.72,high,1995.1666666666667,Priorité maximale,Appel CSM immédiat
+A-c37cab,0.85,high,2452.75,Priorité maximale,Appel CSM immédiat
+A-533452,0.83375,high,1878.5454545454545,Action automatisée,Email automatisé
+A-443b7c,0.62,medium,1503.875,Aucune action,Monitoring passif
+A-1f7acb,0.82,high,5864.0,Priorité maximale,Appel CSM immédiat
+A-f51f16,0.68,medium,1663.75,Aucune action,Monitoring passif
+A-5a3eb9,0.65,medium,1561.0,Aucune action,Monitoring passif
+A-5f2961,0.63,medium,1471.2857142857142,Aucune action,Monitoring passif
+A-417d2f,0.64,medium,1433.3125,Aucune action,Monitoring passif
+A-e98302,0.94,high,2094.5,Priorité maximale,Appel CSM immédiat
+A-8bde0c,0.62,medium,1899.888888888889,Aucune action,Monitoring passif
+A-bcf87c,0.81,high,1979.090909090909,Priorité maximale,Appel CSM immédiat
+A-54ecc2,0.63,medium,1469.8181818181818,Aucune action,Monitoring passif
+A-625d0b,0.23,low,1081.1818181818182,Aucune action,Monitoring passif
+A-fce879,0.54,medium,1359.4,Aucune action,Monitoring passif
+A-b07b56,0.82,high,1132.2666666666669,Action automatisée,Email automatisé
+A-6da850,0.8,high,1159.9375,Action automatisée,Email automatisé
+A-342303,0.8,high,565.0,Action automatisée,Email automatisé
+A-e7a1e2,0.58,medium,1670.1666666666667,Aucune action,Monitoring passif
+A-f1f639,0.78,high,729.75,Action automatisée,Email automatisé
+A-a865bd,0.66,medium,4204.4,Fidéliser,Programme fidélité
+A-4e631b,0.9,high,2218.0,Priorité maximale,Appel CSM immédiat
+A-7f6b86,0.62,medium,2155.777777777778,Fidéliser,Programme fidélité
+A-8adedc,0.85,high,2023.4285714285716,Priorité maximale,Appel CSM immédiat
+A-2edab2,0.5,medium,1139.0,Aucune action,Monitoring passif
+A-149a69,0.55,medium,2686.0,Fidéliser,Programme fidélité
+A-a6d261,0.71,high,2727.928571428572,Priorité maximale,Appel CSM immédiat
+A-443f6f,0.38,medium,1510.4444444444443,Aucune action,Monitoring passif
+A-202b67,0.38,medium,2018.6666666666667,Fidéliser,Programme fidélité
+A-00bed1,0.58,medium,3350.6,Fidéliser,Programme fidélité
+A-ffc04f,0.78,high,1335.9333333333334,Action automatisée,Email automatisé
+A-65c341,0.82,high,3818.25,Priorité maximale,Appel CSM immédiat
+A-dcc2f0,0.59,medium,1166.2,Aucune action,Monitoring passif
+A-ced9aa,0.88,high,568.3636363636364,Action automatisée,Email automatisé
+A-3d957b,0.49,medium,1975.3333333333333,Fidéliser,Programme fidélité
+A-89ee83,0.62,medium,2264.2727272727275,Fidéliser,Programme fidélité
+A-883b7d,0.5,medium,2543.6666666666665,Fidéliser,Programme fidélité
+A-dcc3f1,0.68,medium,1593.375,Aucune action,Monitoring passif
+A-c62e55,0.79,high,1322.4444444444443,Action automatisée,Email automatisé
+A-e4144b,0.32,medium,3542.4,Fidéliser,Programme fidélité
+A-e40f45,0.52,medium,1689.2857142857142,Aucune action,Monitoring passif
+A-96215d,0.73,high,1718.6666666666667,Action automatisée,Email automatisé
+A-2b9d3e,0.93,high,571.3333333333334,Action automatisée,Email automatisé
+A-b7724f,0.47,medium,402.75,Aucune action,Monitoring passif
+A-310452,0.3459868421052631,medium,2200.6,Fidéliser,Programme fidélité
+A-eb1312,0.86,high,1512.25,Action automatisée,Email automatisé
+A-df1e44,0.74,high,1191.5454545454545,Action automatisée,Email automatisé
+A-6a7c9d,0.58,medium,2605.6,Fidéliser,Programme fidélité
+A-cbd1a3,0.73,high,1635.1,Action automatisée,Email automatisé
+A-a8d89d,0.78,high,2443.333333333333,Priorité maximale,Appel CSM immédiat
+A-600734,0.52,medium,1394.7692307692307,Aucune action,Monitoring passif
+A-86fc1d,0.39,medium,1686.7777777777778,Aucune action,Monitoring passif
+A-78f02b,0.48,medium,3770.25,Fidéliser,Programme fidélité
+A-acb7f7,0.66,medium,2714.5,Fidéliser,Programme fidélité
+A-712f1c,0.67,medium,3583.25,Fidéliser,Programme fidélité
+A-3793ee,0.77,high,3815.0,Priorité maximale,Appel CSM immédiat
+A-9a532a,0.58,medium,2736.25,Fidéliser,Programme fidélité
+A-2ebb4b,0.26,low,3068.8,Fidéliser,Programme fidélité
+A-6843f2,0.71,high,1835.555555555556,Action automatisée,Email automatisé
+A-c9bb3e,0.83,high,1521.7,Action automatisée,Email automatisé
+A-4814a3,0.53,medium,7996.090909090909,Fidéliser,Programme fidélité
+A-b7b7b7,0.81,high,2379.833333333333,Priorité maximale,Appel CSM immédiat
+A-ccc747,0.43,medium,802.0,Aucune action,Monitoring passif
+A-bb3bd4,0.43,medium,1064.571428571429,Aucune action,Monitoring passif
+A-09316c,0.52,medium,6363.636363636364,Fidéliser,Programme fidélité
+A-96bbc6,0.65,medium,3803.25,Fidéliser,Programme fidélité
+A-bc4d48,0.52,medium,1770.0,Aucune action,Monitoring passif
+A-b30291,0.62,medium,537.5,Aucune action,Monitoring passif
+A-cdf020,0.5439285714285714,medium,2259.0,Fidéliser,Programme fidélité
+A-e6afc1,0.84,high,2052.909090909091,Priorité maximale,Appel CSM immédiat
+A-e3bd71,0.51,medium,3784.5454545454554,Fidéliser,Programme fidélité
+A-b179bf,0.55,medium,3586.2,Fidéliser,Programme fidélité
+A-098560,0.84,high,1120.5454545454545,Action automatisée,Email automatisé
+A-82861f,0.34,medium,4363.3,Fidéliser,Programme fidélité
+A-94c3cd,0.63,medium,1506.0,Aucune action,Monitoring passif
+A-a33200,0.51,medium,2409.4166666666665,Fidéliser,Programme fidélité
+A-034368,0.77,high,2238.8,Priorité maximale,Appel CSM immédiat
+A-b54c01,0.57,medium,848.25,Aucune action,Monitoring passif
+A-d82ef9,0.57,medium,1023.3571428571428,Aucune action,Monitoring passif
+A-bb2f49,0.6,medium,2180.909090909091,Fidéliser,Programme fidélité
+A-1f559b,0.45,medium,1175.6,Aucune action,Monitoring passif
+A-5a215a,0.55,medium,7230.666666666667,Fidéliser,Programme fidélité
+A-3f9cc0,0.49,medium,2848.5714285714284,Fidéliser,Programme fidélité
+A-f9cc74,0.54,medium,1555.7,Aucune action,Monitoring passif
+A-ed510f,0.61,medium,3616.2,Fidéliser,Programme fidélité
+A-5c9849,0.65,medium,4083.8888888888887,Fidéliser,Programme fidélité
+A-a7bd4b,0.53,medium,569.8181818181819,Aucune action,Monitoring passif
+A-d4ac0e,0.59,medium,1450.3684210526317,Aucune action,Monitoring passif
+A-ffdfd5,0.83,high,1432.2,Action automatisée,Email automatisé
+A-0dbdc6,0.39,medium,3141.4444444444443,Fidéliser,Programme fidélité
+A-7cfe77,0.66,medium,2553.0,Fidéliser,Programme fidélité
+A-1f0636,0.55,medium,8610.0,Fidéliser,Programme fidélité
+A-40de06,0.6,medium,1803.875,Aucune action,Monitoring passif
+A-cb5333,0.62,medium,1641.0,Aucune action,Monitoring passif
+A-309e54,0.6875,medium,2595.3636363636365,Fidéliser,Programme fidélité
+A-6e7827,0.92,high,927.1111111111112,Action automatisée,Email automatisé
+A-50bb9f,0.61,medium,2157.875,Fidéliser,Programme fidélité
+A-5fe118,0.71,high,4458.0,Priorité maximale,Appel CSM immédiat
+A-5247b3,0.83,high,1071.909090909091,Action automatisée,Email automatisé
+A-f44180,0.74,high,2617.090909090909,Priorité maximale,Appel CSM immédiat
+A-c16cf7,0.84,high,1227.4,Action automatisée,Email automatisé
+A-d42431,0.76,high,2351.1111111111118,Priorité maximale,Appel CSM immédiat
+A-6965e1,0.62,medium,2313.75,Fidéliser,Programme fidélité
+A-0354fe,0.64,medium,2210.0,Fidéliser,Programme fidélité
+A-0a62f5,0.6360576923076923,medium,1215.25,Aucune action,Monitoring passif
+A-f5641b,0.54,medium,3912.0,Fidéliser,Programme fidélité
+A-b44e3e,0.53,medium,6217.285714285715,Fidéliser,Programme fidélité
+A-3b37d9,0.87,high,2776.428571428572,Priorité maximale,Appel CSM immédiat
+A-54d94a,0.43,medium,1141.5454545454545,Aucune action,Monitoring passif
+A-7f29a7,0.69,medium,1714.5454545454545,Aucune action,Monitoring passif
+A-089363,0.76,high,1507.428571428571,Action automatisée,Email automatisé
+A-524364,0.91,high,1592.0,Action automatisée,Email automatisé
+A-855a48,0.67,medium,3797.0,Fidéliser,Programme fidélité
+A-756192,0.72,high,2140.0,Priorité maximale,Appel CSM immédiat
+A-49b828,0.83,high,2222.0,Priorité maximale,Appel CSM immédiat
+A-c7ffc2,0.71,high,3009.333333333333,Priorité maximale,Appel CSM immédiat
+A-751c58,0.59,medium,1781.5454545454545,Aucune action,Monitoring passif
+A-72799b,0.42375,medium,1731.5,Aucune action,Monitoring passif
+A-812c5b,0.2,low,2298.769230769231,Fidéliser,Programme fidélité
+A-69b156,0.72,high,1588.111111111111,Action automatisée,Email automatisé
+A-075038,0.27,low,1350.642857142857,Aucune action,Monitoring passif
+A-940b8b,0.65,medium,1205.0,Aucune action,Monitoring passif
+A-2d1036,0.65,medium,4973.307692307692,Fidéliser,Programme fidélité
+A-0f6450,0.55,medium,2163.6363636363635,Fidéliser,Programme fidélité
+A-9affe6,0.6,medium,966.9090909090908,Aucune action,Monitoring passif
+A-80eeb6,0.63,medium,4280.5625,Fidéliser,Programme fidélité
+A-d4e0d4,0.67,medium,13806.0,Fidéliser,Programme fidélité
+A-c7e58b,0.73,high,769.1428571428571,Action automatisée,Email automatisé
+A-016043,0.58,medium,1501.4545454545455,Aucune action,Monitoring passif
+A-bbe56f,0.59,medium,1205.0,Aucune action,Monitoring passif
+A-7c5768,0.53,medium,376.55555555555554,Aucune action,Monitoring passif
+A-751bd4,0.63,medium,95.0,Aucune action,Monitoring passif
+A-4e0e85,0.8,high,568.0,Action automatisée,Email automatisé
+A-ad3abd,0.51,medium,2413.714285714286,Fidéliser,Programme fidélité
+A-e19ff6,0.53,medium,409.1666666666667,Aucune action,Monitoring passif
+A-7920cc,0.25,low,3255.5625,Fidéliser,Programme fidélité
+A-5a92e7,0.49,medium,666.8947368421053,Aucune action,Monitoring passif
+A-fdfc91,0.43,medium,2061.2,Fidéliser,Programme fidélité
+A-1e50e0,0.68,medium,2659.0,Fidéliser,Programme fidélité
+A-1e1b80,0.58,medium,4053.9166666666665,Fidéliser,Programme fidélité
+A-659280,0.82,high,1787.5,Action automatisée,Email automatisé
+A-f6b2fb,0.73,high,2335.9,Priorité maximale,Appel CSM immédiat
+A-cb6cc6,0.7,medium,374.57142857142856,Aucune action,Monitoring passif
+A-d62e02,0.66,medium,2132.4,Fidéliser,Programme fidélité
+A-d535f6,0.62,medium,823.8888888888889,Aucune action,Monitoring passif
+A-39868b,0.71375,high,838.8,Action automatisée,Email automatisé
+A-3cc791,0.69,medium,1065.25,Aucune action,Monitoring passif
+A-337bc1,0.55,medium,2768.428571428572,Fidéliser,Programme fidélité
+A-58b9ff,0.79,high,1741.6923076923076,Action automatisée,Email automatisé
+A-bf7919,0.48,medium,260.0,Aucune action,Monitoring passif
+A-1d5444,0.38,medium,2211.285714285714,Fidéliser,Programme fidélité
+A-0f3e88,0.42,medium,511.27272727272725,Aucune action,Monitoring passif
+A-7641d3,0.7,medium,1096.3636363636365,Aucune action,Monitoring passif
+A-cd458b,0.68,medium,2886.0666666666666,Fidéliser,Programme fidélité
+A-c16b88,0.53,medium,2259.777777777778,Fidéliser,Programme fidélité
+A-59f724,0.64,medium,814.4166666666666,Aucune action,Monitoring passif
+A-87aa7b,0.56,medium,1430.0625,Aucune action,Monitoring passif
+A-1e6fc3,1.0,high,111.0,Action automatisée,Email automatisé
+A-39ddf4,0.83,high,3981.777777777778,Priorité maximale,Appel CSM immédiat
+A-34ea2f,0.39,medium,1215.25,Aucune action,Monitoring passif
+A-716841,0.73,high,3279.25,Priorité maximale,Appel CSM immédiat
+A-558c72,0.82,high,1310.142857142857,Action automatisée,Email automatisé
+A-b11cd0,0.67,medium,801.0,Aucune action,Monitoring passif
+A-cc1d8d,0.93,high,688.2307692307693,Action automatisée,Email automatisé
+A-7f4db3,0.92,high,1751.7333333333331,Action automatisée,Email automatisé
+A-db5e9e,0.77,high,1156.375,Action automatisée,Email automatisé
+A-cc102e,0.55,medium,1006.3,Aucune action,Monitoring passif
+A-82d8a6,0.36,medium,1645.0588235294117,Aucune action,Monitoring passif
+A-dec005,0.56,medium,3074.4,Fidéliser,Programme fidélité
+A-5790f4,0.73,high,3154.333333333333,Priorité maximale,Appel CSM immédiat
+A-7c83a1,0.66,medium,1394.25,Aucune action,Monitoring passif
+A-297a2d,0.38,medium,2874.6,Fidéliser,Programme fidélité
+A-4c56c9,0.76,high,2343.923076923077,Priorité maximale,Appel CSM immédiat
+A-cbbe12,0.71,high,2180.1666666666665,Priorité maximale,Appel CSM immédiat
+A-4a267b,0.86,high,2968.7,Priorité maximale,Appel CSM immédiat
+A-bcbe98,0.72,high,1969.636363636364,Priorité maximale,Appel CSM immédiat
+A-427b69,0.92,high,1995.8,Priorité maximale,Appel CSM immédiat
+A-0be015,0.89,high,235.6,Action automatisée,Email automatisé
+A-054577,0.66,medium,2787.5625,Fidéliser,Programme fidélité
+A-bc87bc,0.76,high,1504.0,Action automatisée,Email automatisé
+A-0f7d77,0.81,high,387.6666666666667,Action automatisée,Email automatisé
+A-e7beab,0.48,medium,1618.857142857143,Aucune action,Monitoring passif
+A-a09355,0.81,high,2133.75,Priorité maximale,Appel CSM immédiat
+A-31ab9a,0.79,high,2257.428571428572,Priorité maximale,Appel CSM immédiat
+A-0158bb,0.43,medium,678.3333333333334,Aucune action,Monitoring passif
+A-f19b24,0.54,medium,841.0,Aucune action,Monitoring passif
+A-798a3f,0.2761654135338345,low,1572.4444444444443,Aucune action,Monitoring passif
+A-42b791,0.77,high,2722.8571428571427,Priorité maximale,Appel CSM immédiat
+A-068fc6,0.76,high,2908.5,Priorité maximale,Appel CSM immédiat
+A-6f50ae,0.7860576923076923,high,1900.571428571429,Action automatisée,Email automatisé
+A-a2485e,0.69,medium,1462.5,Aucune action,Monitoring passif
+A-bb1eaa,0.31,medium,2076.2,Fidéliser,Programme fidélité
+A-cc98bc,0.42,medium,2156.7,Fidéliser,Programme fidélité
+A-d77f4c,0.71,high,3480.428571428572,Priorité maximale,Appel CSM immédiat
+A-ccabf0,0.59,medium,2237.9,Fidéliser,Programme fidélité
+A-700ade,0.49,medium,2109.375,Fidéliser,Programme fidélité
+A-4a4c2d,0.57,medium,2612.769230769231,Fidéliser,Programme fidélité
+A-b7ef83,0.62,medium,2391.2,Fidéliser,Programme fidélité
+A-e08cd3,0.68,medium,6456.363636363636,Fidéliser,Programme fidélité
+A-19b2c8,0.52375,medium,2054.076923076923,Fidéliser,Programme fidélité
+A-970c97,0.66,medium,1922.625,Aucune action,Monitoring passif
+A-6dee43,0.61,medium,2070.0,Fidéliser,Programme fidélité
+A-5ed98d,0.64,medium,1934.75,Fidéliser,Programme fidélité
+A-c58f49,0.75,high,10140.0,Priorité maximale,Appel CSM immédiat
+A-9c18c4,0.27,low,1782.3,Aucune action,Monitoring passif
+A-cc8c8f,0.79,high,2228.5714285714284,Priorité maximale,Appel CSM immédiat
+A-5f7781,0.74375,high,2050.4,Priorité maximale,Appel CSM immédiat
+A-e1b9cd,0.54,medium,2469.4666666666667,Fidéliser,Programme fidélité
+A-ac85cd,0.78,high,3438.9166666666665,Priorité maximale,Appel CSM immédiat
+A-d792a6,0.79,high,1536.6,Action automatisée,Email automatisé
+A-ac9111,0.69,medium,1664.125,Aucune action,Monitoring passif
+A-18793f,0.74,high,7144.363636363636,Priorité maximale,Appel CSM immédiat
+A-9f0b68,0.62,medium,2376.5,Fidéliser,Programme fidélité
+A-d3c88e,0.81375,high,2014.076923076923,Priorité maximale,Appel CSM immédiat
+A-ccb686,0.67,medium,1795.0833333333333,Aucune action,Monitoring passif
+A-118f1c,0.57,medium,6520.0,Fidéliser,Programme fidélité
+A-0e966d,0.77,high,1131.3636363636365,Action automatisée,Email automatisé
+A-b9f5b1,0.56,medium,1010.2857142857144,Aucune action,Monitoring passif
+A-8ae3fc,0.73,high,555.875,Action automatisée,Email automatisé
+A-55f257,0.84,high,1213.7,Action automatisée,Email automatisé
+A-d26ab4,0.39,medium,1845.888888888889,Aucune action,Monitoring passif
+A-712533,0.69,medium,1615.1666666666667,Aucune action,Monitoring passif
+A-781cc0,0.64,medium,1144.6875,Aucune action,Monitoring passif
