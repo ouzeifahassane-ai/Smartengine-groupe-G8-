@@ -1,95 +1,92 @@
-﻿# Projet smartEngine - Groupe G8
-
-## Contexte
-Nous construisons smartEngine, un système de prédiction de churn pour RavenStack, un SaaS B2B qui commercialise une plateforme de gestion de projets à destination des équipes tech. Les données sont dans /data/raw/ et ne doivent jamais être modifiées.
-
-## Objectif
-Concevoir un système complet de prédiction de churn : nettoyage des données, identification des signaux précurseurs, modèle de scoring prédictif, dashboard Streamlit pour les équipes Customer Success, alertes automatisées via n8n.
-
-## Dataset
-5 fichiers CSV dans /data/raw/ :
-- accounts.csv (~500 lignes)
-- subscriptions.csv (~5000 lignes)
-- feature_usage.csv (~25000 lignes)
-- support_tickets.csv (~2000 lignes)
-- churn_events.csv (~600 lignes)
-
-## Conventions
-- Scripts Python -> /src/
-- Rapports générés -> /outputs/
-- Ne jamais modifier /data/raw/
-- Tous les rapports sont en français
-- Nommage fichiers : kebab-case
-
-## Contraintes RGPD
-- Article 22 applicable : le score de churn influence des décisions commerciales
-- Minimisation des données : justifier chaque variable utilisée
-- Transparence algorithmique obligatoire
-
-## Sprint en cours
-Sprint 1 - Découverte et mise en place (9-11 mars 2026)
-# smartEngine – GEMINI.md
-
+﻿# smartEngine – GEMINI.md
 ## Contexte projet
 Projet de prédiction de churn pour RavenStack, un SaaS B2B fictif.
 Groupe G8 – MSc2 Data Marketing – INSEEC Lyon.
 
 ## Sprint en cours
-**Sprint 2** – Nettoyage, construction de la table analytique, feature engineering
+**Sprint 4** – Déploiement : segmentation, dashboard Streamlit, recommandations
 
-## Rôles Sprint 2
-- **Scrum Master** : [Etya'ale]
-- **Product Owner** : [Emmanuel]
-- **Développeurs IA** : Ouzeifa, [Boulama]
+## Rôles Sprint 4
+- **Scrum Master** : Ouzeifa
+- **Product Owner** : Emmanuel
+- **Développeurs IA** : Joel, Boulama
 
-## Résumé Sprint 1 (Done)
+## Résumé Sprint 1 (Done)q
 - Dépôt GitHub initialisé avec structure de base
-- GEMINI.md créé, agent data-explorer.md configuré
+- Agent data-explorer.md configuré
 - Exploration des 5 CSV réalisée
-- Brief client rédigé (docs/)
-- Veille outils complétée
-- Backlog initialisé
+- Brief client et veille outils complétés
 - Section 1 du dossier de conception rédigée
 
-## Dataset
-Les 5 fichiers CSV sont dans data/raw/ et ne doivent jamais être modifiés :
-- accounts.csv
-- subscriptions.csv
-- feature_usage.csv
-- support_tickets.csv
-- churn_events.csv
+## Résumé Sprint 2 (Done)
+- Table analytique construite : data/processed/analytics.csv
+- Scripts : clean_data.py, build_features.py, build_analytics.py
+- Rapport de nettoyage : outputs/rapport-nettoyage.md
+- Section 2 du dossier de conception rédigée
 
-## Objectif Sprint 2
-Produire data/processed/analytics.csv :
-- Une ligne par account_id
-- Données nettoyées (valeurs manquantes, doublons, types, outliers)
-- Features dérivées (tendances, ratios, agrégations)
-- Variable cible churn binaire (0/1) alignée temporellement
+## Résumé Sprint 3 (Done)
+- 3 algorithmes entraînés : Logistic Regression, Random Forest, XGBoost
+- Modèle retenu sauvegardé : outputs/models/churn_model.joblib
+- Scores générés : outputs/scores.csv (account_id, churn_score, risk_level)
+- Rapport de performance : outputs/rapport-modele.md
+- Section 3 du dossier de conception rédigée
+
+## Objectif Sprint 4
+- Segmentation risque/valeur → outputs/priorisation.csv
+- Dashboard Streamlit → src/dashboard.py
+- Recommandations et ROI → outputs/recommandations.md
+- Section 4 dossier de conception
+- Support de soutenance → docs/soutenance.pptx
+
+## Fichiers importants
+- Modèle : outputs/models/churn_model.joblib
+- Scores : outputs/scores.csv
+- Priorisation : outputs/priorisation.csv (à produire)
+- Dashboard : src/dashboard.py (à produire)
 
 ## Structure du dépôt
 smartengine-groupe-G8-/
 ├── .gemini/agents/
-│   ├── data-explorer.md       # Sprint 1
-│   └── data-engineer.md       # Sprint 2 (NOUVEAU)
+│   ├── data-explorer.md        # Sprint 1
+│   ├── data-engineer.md        # Sprint 2
+│   ├── model-trainer.md        # Sprint 3
+│   └── agent-deploiement.md    # Sprint 4 (NOUVEAU)
 ├── data/
-│   ├── raw/                   # CSV bruts (ne jamais modifier)
-│   └── processed/             # analytics.csv (à produire)
+│   ├── raw/                    # CSV bruts (ne jamais modifier)
+│   └── processed/
+│       └── analytics.csv
 ├── src/
 │   ├── clean_data.py
 │   ├── build_features.py
-│   └── build_analytics.py
+│   ├── build_analytics.py
+│   ├── train_model.py
+│   ├── evaluate_model.py
+│   ├── generate_scores.py
+│   └── dashboard.py            # NOUVEAU Sprint 4
 ├── outputs/
-│   └── rapport-nettoyage.md
-└── docs/
-    ├── standups/
-    └── dossier-conception.docx
+│   ├── rapport-nettoyage.md
+│   ├── rapport-modele.md
+│   ├── scores.csv
+│   ├── priorisation.csv        # NOUVEAU Sprint 4
+│   ├── recommandations.md      # NOUVEAU Sprint 4
+│   └── models/
+│       └── churn_model.joblib
+├── docs/
+│   ├── standups/
+│   ├── dossier-conception.docx
+│   └── soutenance.pptx         # NOUVEAU Sprint 4
+├── requirements.txt            # NOUVEAU Sprint 4
+└── README.md
 
 ## Conventions
 - Langue : français pour les rapports, anglais pour le code
 - Noms de fichiers : snake_case
-- Commits : "[prénom] action courte" (ex: "ouzeifa clean accounts csv")
+- Commits : "[prénom] action courte"
 - La variable cible s'appelle : churn (0 = actif, 1 = churné)
 - Ne jamais modifier les fichiers dans data/raw/
 
-## Prochaine étape
-Créer l'agent data-engineer.md dans .gemini/agents/
+## Contraintes RGPD
+- Article 22 : le score de churn influence des décisions commerciales
+- Droit à l'explication : SHAP obligatoire dans le dashboard
+- L'humain reste dans la boucle : le score ne déclenche jamais une action seul
+- Minimisation des données : chaque variable est justifiée
