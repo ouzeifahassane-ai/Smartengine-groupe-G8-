@@ -58,3 +58,89 @@ Le traitement des données clients est soumis au Règlement Général sur la Pro
 
 ---
 *Document de conception - Mise à jour Sprint 2 - 27 Avril 2026*
+## Section 4 : Déploiement
+
+### 4.1 Segmentation risque / valeur
+
+**Pourquoi la matrice risque/valeur plutôt qu'un clustering ?**
+Le clustering (K-means) produit des groupes automatiques difficiles à interpréter pour les équipes métier. La matrice risque/valeur est volontairement simple : chaque quadrant correspond à une décision claire et immédiate. Elle parle directement aux équipes Customer Success sans nécessiter de formation technique.
+
+**Définition des seuils de valeur :**
+Le seuil MRR est défini sur la médiane du MRR de la table analytique. Les comptes au-dessus de la médiane sont classés "valeur élevée", en dessous "valeur faible". Ce choix garantit une répartition équilibrée des comptes entre les quadrants.
+
+**Les 4 quadrants et actions associées :**
+
+| Quadrant | Profil | Action |
+|---|---|---|
+| Risque élevé / Valeur élevée | Gros comptes en danger | Appel CSM dans les 24h |
+| Risque élevé / Valeur faible | Petits comptes en danger | Email automatisé de rétention |
+| Risque faible / Valeur élevée | Gros comptes fidèles | Fidélisation proactive |
+| Risque faible / Valeur faible | Petits comptes stables | Aucune action prioritaire |
+
+---
+
+### 4.2 Dashboard Streamlit
+
+**Choix des visualisations :**
+Trois vues complémentaires ont été conçues pour répondre aux besoins des équipes métier :
+- Vue portefeuille : KPIs globaux, distribution des scores, répartition par quadrant
+- Vue priorisation : matrice risque/valeur interactive, liste filtrable par score/MRR/plan
+- Vue fiche compte : profil détaillé, score, quadrant, action recommandée, explication SHAP
+
+**Accessibilité (WCAG) :**
+Les couleurs choisies respectent les critères WCAG 2.1 pour le daltonisme : rouge/vert remplacés par des palettes orange/bleu accessibles. Chaque élément visuel est accompagné d'un libellé textuel.
+
+**Retour d'expérience Streamlit :**
+Streamlit permet de créer une interface interactive sans HTML/CSS. La courbe d'apprentissage est faible, idéale pour un prototype rapide. Limite principale : les performances sur de grands datasets nécessitent une mise en cache avec `@st.cache_data`.
+
+---
+
+### 4.3 Recommandations et mesure d'impact
+
+**Méthode de calcul du ROI :**
+- Coût actuel du churn = nombre de churners × MRR moyen
+- Gain estimé = MRR à risque × taux de rétention cible × taux de succès des actions
+- Coût des actions = coût par contact × nombre de comptes ciblés
+- ROI = (Gain estimé - Coût des actions) / Coût des actions
+
+**Protocole de mesure d'impact :**
+Pour prouver que les actions de rétention créent de la valeur :
+1. Groupe traité : reçoit l'action de rétention (appel CSM ou email)
+2. Groupe témoin : aucune action (sélection aléatoire parmi les comptes à risque)
+3. Mesure après 30 jours : taux de rétention des deux groupes
+4. Uplift = taux de rétention groupe traité - taux de rétention groupe témoin
+5. KPIs suivis : taux de rétention, MRR sauvé, coût par compte retenu
+
+**Conduite du changement :**
+Le déploiement suit une approche progressive : phase pilote sur le quadrant "risque élevé / valeur élevée" (impact maximal), puis élargissement selon les résultats. Les équipes CSM sont formées à la lecture du dashboard et à l'interprétation des scores SHAP.
+
+---
+
+### 4.4 Bilan des agents IA sur les 4 sprints
+
+| Sprint | Agent | Rôle | Bilan |
+|---|---|---|---|
+| Sprint 1 | data-explorer.md | Exploration des CSV | Efficace pour la découverte initiale |
+| Sprint 2 | data-engineer.md | Nettoyage et feature engineering | Bon résultat, interventions manuelles sur les types |
+| Sprint 3 | model-trainer.md | Entraînement et évaluation des modèles | Performant, SHAP nécessite ajustement manuel |
+| Sprint 4 | agent-deploiement.md | Segmentation et dashboard | Génération rapide du code Streamlit |
+
+**Ce qui a bien fonctionné :** La décomposition en agents spécialisés par sprint. Chaque agent a un périmètre clair et des instructions précises.
+
+**Ce qui a nécessité des interventions manuelles :** La gestion des conflits de merge Git, l'ajustement des hyperparamètres du modèle, et la personnalisation des visualisations SHAP.
+
+---
+
+### 4.5 Limites et perspectives
+
+**Limites du modèle :**
+- Le modèle est entraîné sur des données historiques : il ne capture pas les changements récents du marché
+- Biais potentiel par industrie et par plan tarifaire (Enterprise mieux représentés)
+- Le score de churn est une probabilité, pas une certitude : l'humain reste dans la boucle (Art. 22 RGPD)
+- Performance dégradée sur les nouveaux comptes (moins de 3 mois d'historique)
+
+**Perspectives d'amélioration :**
+- Réentraînement mensuel automatique avec les nouvelles données
+- Intégration de signaux temps réel (connexions, tickets ouverts)
+- Modèle séparé par segment (Starter / Growth / Enterprise)
+- Alertes automatisées via n8n pour les comptes qui passent en risque élevé
