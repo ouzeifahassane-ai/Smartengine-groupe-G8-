@@ -63,7 +63,6 @@ def health():
 @app.get("/scores")
 def get_scores():
     df = charger_csv(SCORES_PATH)
-    # Convertir en liste de dicts avec types natifs Python
     return df.where(pd.notnull(df), None).applymap(to_python).to_dict(orient="records")
 
 
@@ -74,7 +73,6 @@ def get_scores():
 def get_score(account_id: str):
     df = charger_csv(SCORES_PATH)
 
-    # Recherche du compte (comparaison en string pour robustesse)
     df["account_id"] = df["account_id"].astype(str)
     ligne = df[df["account_id"] == account_id]
 
@@ -84,7 +82,6 @@ def get_score(account_id: str):
             detail=f"Compte '{account_id}' introuvable dans scores.csv."
         )
 
-    # Retourne le premier résultat trouvé
     record = ligne.iloc[0].where(pd.notnull(ligne.iloc[0]), None).to_dict()
     return {k: to_python(v) for k, v in record.items()}
 
@@ -96,7 +93,6 @@ def get_score(account_id: str):
 def get_portfolio():
     df_scores = charger_csv(SCORES_PATH)
 
-    # Comptes par niveau de risque
     risk = df_scores["risk_level"].str.lower()
     high_count   = int((risk == "high").sum())
     medium_count = int((risk == "medium").sum())
@@ -110,7 +106,6 @@ def get_portfolio():
         if "mrr" in comptes_high.columns:
             mrr_a_risque = int(comptes_high["mrr"].sum())
 
-    # Moyenne du score churn
     avg_score = round(float(df_scores["churn_probability"].mean()), 3)
 
     return {
@@ -143,9 +138,10 @@ def get_priorisation():
 # ─────────────────────────────────────────────
 @app.post("/run-pipeline")
 def run_pipeline():
+    # Noms exacts des scripts présents dans src/
     scripts = [
         "src/generate_scores.py",
-        "src/build_priorisation.py",
+        "src/generate_prioritization.py",
     ]
 
     etapes = []
@@ -156,13 +152,12 @@ def run_pipeline():
                 ["python", script],
                 capture_output=True,
                 text=True,
-                timeout=120,  # max 2 minutes par script
+                timeout=120,
             )
 
             if resultat.returncode == 0:
                 etapes.append({"script": Path(script).name, "statut": "ok"})
             else:
-                # Le script a planté — on capture l'erreur mais on continue
                 etapes.append({
                     "script": Path(script).name,
                     "statut": "erreur",
@@ -182,7 +177,6 @@ def run_pipeline():
                 "detail": str(e),
             })
 
-    # Statut global : ok seulement si toutes les étapes sont ok
     statut_global = "ok" if all(e["statut"] == "ok" for e in etapes) else "erreur"
 
     return {
