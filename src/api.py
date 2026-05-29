@@ -27,8 +27,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- Chemins vers les fichiers de données ---
-SCORES_PATH = Path("outputs/scores.csv")
+# --- Chemins vers les fichiers de données (structure locale réelle) ---
+SCORES_PATH       = Path("outputs/scores.csv")
 PRIORISATION_PATH = Path("outputs/priorisation.csv")
 
 
@@ -50,7 +50,7 @@ def to_python(obj):
 
 
 # ─────────────────────────────────────────────
-# 1. GET /health — vérification que l'API tourne
+# 1. GET /health
 # ─────────────────────────────────────────────
 @app.get("/health")
 def health():
@@ -72,7 +72,6 @@ def get_scores():
 @app.get("/scores/{account_id}")
 def get_score(account_id: str):
     df = charger_csv(SCORES_PATH)
-
     df["account_id"] = df["account_id"].astype(str)
     ligne = df[df["account_id"] == account_id]
 
@@ -87,21 +86,20 @@ def get_score(account_id: str):
 
 
 # ─────────────────────────────────────────────
-# 4. GET /portfolio — synthèse globale du portefeuille
+# 4. GET /portfolio — synthèse globale
 # ─────────────────────────────────────────────
 @app.get("/portfolio")
 def get_portfolio():
     df_scores = charger_csv(SCORES_PATH)
 
-    risk = df_scores["risk_level"].str.lower()
+    risk         = df_scores["risk_level"].str.lower()
     high_count   = int((risk == "high").sum())
     medium_count = int((risk == "medium").sum())
     low_count    = int((risk == "low").sum())
 
-    # MRR à risque : on utilise priorisation.csv si disponible, sinon 0
     mrr_a_risque = 0
     if PRIORISATION_PATH.exists():
-        df_prio = pd.read_csv(PRIORISATION_PATH)
+        df_prio      = pd.read_csv(PRIORISATION_PATH)
         comptes_high = df_prio[df_prio["risk_level"].str.lower() == "high"]
         if "mrr" in comptes_high.columns:
             mrr_a_risque = int(comptes_high["mrr"].sum())
@@ -119,7 +117,7 @@ def get_portfolio():
 
 
 # ─────────────────────────────────────────────
-# 5. GET /priorisation — contenu de priorisation.csv
+# 5. GET /priorisation
 # ─────────────────────────────────────────────
 @app.get("/priorisation")
 def get_priorisation():
@@ -127,21 +125,20 @@ def get_priorisation():
         return {
             "message": "Le fichier priorisation.csv n'est pas encore généré. Lance /run-pipeline d'abord."
         }
-
     df = pd.read_csv(PRIORISATION_PATH)
     return df.where(pd.notnull(df), None).applymap(to_python).to_dict(orient="records")
 
 
 # ─────────────────────────────────────────────
-# 6. POST /run-pipeline — régénère scores.csv et priorisation.csv
+# 6. POST /run-pipeline — régénère scores et priorisation
 #    ⚠️  Ne réentraîne PAS le modèle (train_model.py reste manuel)
 # ─────────────────────────────────────────────
 @app.post("/run-pipeline")
 def run_pipeline():
-    # Noms exacts des scripts présents dans src/
+    # Noms exacts des scripts présents dans src/ en local
     scripts = [
-        "src/generate_scores.py",
-        "src/generate_prioritization.py",
+        "src/générer_scores.py",
+        "src/générer_priorisation.py",
     ]
 
     etapes = []
@@ -154,7 +151,6 @@ def run_pipeline():
                 text=True,
                 timeout=120,
             )
-
             if resultat.returncode == 0:
                 etapes.append({"script": Path(script).name, "statut": "ok"})
             else:
@@ -163,7 +159,6 @@ def run_pipeline():
                     "statut": "erreur",
                     "detail": resultat.stderr.strip() or resultat.stdout.strip(),
                 })
-
         except subprocess.TimeoutExpired:
             etapes.append({
                 "script": Path(script).name,
@@ -180,7 +175,7 @@ def run_pipeline():
     statut_global = "ok" if all(e["statut"] == "ok" for e in etapes) else "erreur"
 
     return {
-        "status": statut_global,
-        "etapes": etapes,
+        "status":      statut_global,
+        "etapes":      etapes,
         "regenere_le": datetime.now().isoformat(timespec="seconds"),
     }
