@@ -1,6 +1,16 @@
-streamlit
+# Dépendances SmartEngine — Groupe G8
+# ML & Data
 pandas
 scikit-learn
+xgboost
 joblib
-plotly
+
+# API
+fastapi
+uvicorn[standard]
+
+# Dashboard
+streamlit
+
+# Utilitaires
 numpy
